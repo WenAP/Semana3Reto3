@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario reto 3</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <h2>Formulario semana 3 reto 3</h2>
+    <form>
+        <fieldset>
+            <div>
+                <label form="primerNombre">Ingrese su nombre</label>
+                <input class="primerNombre" id="edad" type="text" placeholder="Nombre" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="primerApellido">Ingrese su apellido</label>
+                <input id="primerApellido" type="text" placeholder="Apellido" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <label form="edad">Ingrese su edad</label>
+                <input id="edad" type="number" placeholder="Edad" type="range" min="18" max="80" oninvalid="setCustomValidity('Solo admite edad de 18 a 80. ')" oninput="setCustomValidity('')">
+            </div>
+            <div>
+                <label form="sexo">Sexo</label>
+                <select name="sexo" id="sexo">
+                    <option value="0"> -Seleccionar-</option>
+                    <option value="1"> Femenino</option>
+                    <option value="2"> Masculino</option>
+                    <option value="3"> Otro</option>
+                </select>
+            </div>
+            <div>
+                <label form="dni">Ingrese su DNI</label>
+                <input type="dni" placeholder="DNI" required pattern="[A-Za-z0-9]+" maxlength="8"  oninvalid="setCustomValidity('Solo admite letras o numeros de hasta 8 digitos.')" oninput="setCustomValidity('')">
+            </div>
+            <div>
+                <label form="correoElectronico">Ingrese correo</label>
+                <input type="email" placeholder="correo" required>
+            </div> 
+            <input type="submit" value="Enviar formulario">
+        </fieldset>
+    </form>
+</body>
+</html>
