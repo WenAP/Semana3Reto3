@@ -1,0 +1,56 @@
+.body {
+    background-color: #1687A0;
+    color: #FFFFFF;
+}
+
+form {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 41px;
+}
+
+input {
+    width: 363px;
+    height: 59px;
+    left: 100px;
+    top: 2156px;
+    background: #FFFFFF;
+    border: 1px solid #BFBFBF;
+    outline: none;
+    margin: 10px;
+    padding-left: 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.description {
+    width: 764px;
+    height: 109px;
+    text-align: justify;
+}
+
+.enviar {
+    width: 167px;
+    height: 56px;
+    left: 396px;
+    top: 2500px;
+    background: #233451;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}

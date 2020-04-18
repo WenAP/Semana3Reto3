@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario reto 3</title>
+    <link rel="stylesheet" href="./styles/styles-index.css">
+</head>
+<body class="body">
+    <h2>Contacto</h2>
+    <form>
+            <div>
+                <input class="primerNombre" id="edad" type="text" placeholder="Nombre" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+                <input id="primerApellido" type="text" placeholder="Apellido" pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Solo admite texto. ')" oninput="setCustomValidity('')" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" required>
+                <input type="dni" placeholder="Telefono" required pattern="[A-Za-z0-9]+" minlength="5"  oninvalid="setCustomValidity('Solo admite letras o numeros de minimo 5 digitos.')" oninput="setCustomValidity('')">
+            </div>
+            <div>
+                <input class="description" id="description" type="text" placeholder="Descripcion">
+            </div>
+            <input class="enviar" type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>
